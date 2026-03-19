@@ -1,0 +1,6 @@
+# Default inference settings for physical benchmarking.
+
+inference:
+  speed_mult: 0.5
+  time_limit_s: 30
+  checkpoint_step: 100000

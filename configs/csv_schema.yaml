@@ -1,0 +1,61 @@
+# CSV schema for per-trial inference logging.
+# Columns are ordered as they should appear in the CSV.
+
+columns:
+  - name: model_id
+    type: string
+    source: manual
+  - name: trial_id
+    type: int
+    source: manual
+  - name: task_name
+    type: string
+    source: manual
+  - name: robustness_condition
+    type: string
+    source: manual
+  - name: time_limit_s
+    type: float
+    source: manual
+  - name: duration_s
+    type: float
+    source: automatic
+  - name: completed_within_time
+    type: int
+    source: manual
+  - name: success
+    type: int
+    source: manual
+  - name: failed_to_grab
+    type: int
+    source: manual
+  - name: dropped
+    type: int
+    source: manual
+  - name: wrong_target
+    type: int
+    source: manual
+  - name: incomplete_placement
+    type: int
+    source: manual
+  - name: push_overshoot
+    type: int
+    source: manual
+  - name: push_undershoot
+    type: int
+    source: manual
+  - name: num_retries
+    type: int
+    source: manual
+  - name: action_mean
+    type: float
+    source: automatic
+  - name: action_std
+    type: float
+    source: automatic
+  - name: action_min
+    type: float
+    source: automatic
+  - name: action_max
+    type: float
+    source: automatic

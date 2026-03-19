@@ -1,0 +1,19 @@
+# Manual prompt logic for per-trial inference metrics.
+
+prompt_rules:
+  always_prompt:
+    - num_retries
+  if_success_is_0:
+    - failed_to_grab
+    - dropped
+    - wrong_target
+    - incomplete_placement
+    - push_overshoot
+    - push_undershoot
+  if_success_is_1_defaults:
+    failed_to_grab: 0
+    dropped: 0
+    wrong_target: 0
+    incomplete_placement: 0
+    push_overshoot: 0
+    push_undershoot: 0

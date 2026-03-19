@@ -1,0 +1,18 @@
+# Camera presets for SO101 front/wrist cameras.
+
+profiles:
+  default_640x480_30:
+    width: 640
+    height: 480
+    fps: 30
+    warmup_s: 2
+    color_mode: rgb
+    rotation: 0
+
+  low_load_640x480_20:
+    width: 640
+    height: 480
+    fps: 20
+    warmup_s: 2
+    color_mode: rgb
+    rotation: 0

@@ -1,0 +1,24 @@
+# Default SmolVLA training hyperparameters.
+
+training:
+  batch_size: 16
+  steps: 100000
+  log_freq: 50
+  save_checkpoint: true
+  save_freq: 10000
+  use_amp: true
+  seed: 42
+  num_workers: 4
+  video_backend: pyav
+
+model:
+  load_vlm_weights: true
+  pad_language_to: max_length
+  tokenizer_max_length: 48
+
+optimizer:
+  preset: default
+  finetune_lr: 5e-5
+
+scheduler:
+  preset: default

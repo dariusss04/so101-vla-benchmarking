@@ -1,0 +1,46 @@
+# CALVIN-style benchmark task definitions used for physical inference.
+# time_limit_s should be set per task (typically 30–60s).
+
+tasks:
+  - id: take_block_off_stack
+    description: "Take off the block that is on top of the other one"
+    category: stacking
+    time_limit_s: 60
+
+  - id: place_block_on_block
+    description: "Put the grasped block on top of a block"
+    category: stacking
+    time_limit_s: 60
+
+  - id: slide_blue_left
+    description: "Go slide the blue block to the left"
+    category: push
+    time_limit_s: 30
+
+  - id: remove_top_from_tower
+    description: "Go to the tower of blocks and take off the top one"
+    category: stacking
+    time_limit_s: 60
+
+  - id: pick_blue_cube
+    description: "Pick up the blue cube on the table"
+    category: pick
+    time_limit_s: 30
+
+  - id: push_blue_right
+    description: "Push right the blue cube"
+    category: push
+    time_limit_s: 30
+
+  - id: lift_pink_block
+    description: "Lift the pink block"
+    category: pick
+    time_limit_s: 30
+
+robustness_conditions:
+  - id: static
+    description: "Objects fixed in one position across repeated trials."
+  - id: dynamic
+    description: "Objects moved between trials; new positions each run."
+  - id: human_intervention
+    description: "Human perturbs or moves objects during inference."
