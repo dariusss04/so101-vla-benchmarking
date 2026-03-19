@@ -2,8 +2,6 @@
 
 This repository contains the full **manual benchmarking pipeline** used in our VLA (Vision‑Language‑Action) experiments on a physical SO101 setup. It includes dataset metadata, training and inference scripts (ACT and SmolVLA), benchmarking metrics, and configuration files designed for reproducible evaluation.
 
-> Focus: **real‑world benchmarking** (no simulation in this repo).
-
 ## Project Goals
 
 - Build a **clean, reproducible pipeline** for manual VLA benchmarking.
